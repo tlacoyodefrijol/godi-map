@@ -11,10 +11,12 @@ var basic_choropleth = new Datamap({
 
  geographyConfig: {
    highlightOnHover: true,
-   highlightFillColor: '#eeeee',
-   highlightBorderColor: '#060606',
-   highlightBorderWidth: .5,
-   highlightBorderOpacity: .75,
+   highlightFillColor: 'rgba(0,153,153,1)',
+   highlightBorderColor: 'none',
+       highlightBorderWidth: 2,
+       highlightBorderOpacity: 1,
+       highlightFillOpacity: 0.85,
+
   popupTemplate: function(geography, data) {
         return '<div class="hoverinfo">' + geography.properties.name +
         ': ' +  data.Prepared + ' '
