@@ -5,9 +5,16 @@ var basic_choropleth = new Datamap({
   height: null, // If not null, datamaps will grab the height of 'element'
   width: null, // If not null, datamaps will grab the width of 'element',
   responsive: true, // If true, call `resize()` on the map object when it should adjust it's size
+  highlightOnHover: true,
+  highlightFillColor: '#eeeee',
   done: function() {}, // Callback when the map is done drawing
 
  geographyConfig: {
+   highlightOnHover: true,
+   highlightFillColor: '#eeeee',
+   highlightBorderColor: '#060606',
+   highlightBorderWidth: .5,
+   highlightBorderOpacity: .75,
   popupTemplate: function(geography, data) {
         return '<div class="hoverinfo">' + geography.properties.name +
         ': ' +  data.Prepared + ' '
@@ -16,14 +23,14 @@ var basic_choropleth = new Datamap({
   },
 
 fills: {
-  'GODI15': '#e29841',//Submitted to GODI 2015
+  'GODI15': '#a8e0f9',//Submitted to GODI 2015
   'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
-  'THREE': '#6dc76d',//Submited in 2015 is OKI and either OGP or Barometer
+  'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
   'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
-  'GODI15+Barometer':'#E52973',//Submitted in 2015, has info from Barometer
-  'GODI15+OGP':'#2177f1',//Submitted in 2015, belongs to OGP
-  'OGP': '#86b4f7',//Belongs to OGP only
-  'Barometer': '#e27ea6',//Barometer information Only
+  'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
+  'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
+  'OGP': '#f5bb81',//Belongs to OGP only
+  'Barometer': '#f3eab5',//Barometer information Only
   defaultFill: '#bababa'
 },
 data:{
