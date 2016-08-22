@@ -12,8 +12,8 @@ var basic_choropleth = new Datamap({
    highlightOnHover: true,
    highlightFillColor: 'rgba(0,153,153,1)',
    highlightBorderColor: 'none',
-       highlightBorderWidth: 2,
-       highlightBorderOpacity: 1,
+       highlightBorderWidth: .5,
+       highlightBorderOpacity: .5,
        highlightFillOpacity: 0.85,
 
   popupTemplate: function(geography, data) {
