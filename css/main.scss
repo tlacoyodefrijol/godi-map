@@ -61,8 +61,9 @@ $on-laptop:        800px;
 table {
     position:sticky;
     font-family: helvetica, sans-serif;
+    font-size: 12px;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
 }
 
 td, th {
@@ -74,7 +75,7 @@ td, th {
 
 
 //'OGP': '#f5bb81',//Belongs to OGP only
-//'Barometer': '#f3eab5',//Barometer information Only
+
 //defaultFill: '#bababa'
 
 .title {
@@ -84,38 +85,49 @@ td, th {
 .first {
   width: 10%;
   height: auto;
-  background-color: #a8e0f9;
+  background-color: #009fe5;
 }
 //'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
 .second {
   width: 10%;
   height: auto;
-  background-color:#e2cc41;
+  background-color:#06e8c1;
 }
 //'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
 .third {
   width: 10%;
   height: auto;
-  background-color:#e29841;
+  background-color:#0DEC5C;
 }
 //'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
 .fourth {
   width: 10%;
   height: auto;
-  background-color:#269a43;
+  background-color:#2ff014;
 }
 
 //'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
 .fifth {
   width: 10%;
   height: auto;
-  background-color:#ffe438;
+  background-color:#9cf31b;
 }
 //'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
 .sixth {
   width: 10%;
   height: auto;
-  background-color:#82741d;
+  background-color:#f7e823;
+}
+//'Barometer': '#f3eab5',//Barometer information Only
+.seventh {
+  width: 10%;
+  height: auto;
+  background-color:#fb892b;
+}
+.eighth {
+  width: 10%;
+  height: auto;
+  background-color:#ff3236;
 }
 
 tr:nth-child(even) {

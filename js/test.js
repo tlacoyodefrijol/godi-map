@@ -25,14 +25,14 @@ var basic_choropleth = new Datamap({
   },
 
 fills: {
-  'GODI15': '#a8e0f9',//Submitted to GODI 2015
-  'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
-  'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
-  'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
-  'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
-  'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
-  'OGP': '#f5bb81',//Belongs to OGP only
-  'Barometer': '#f3eab5',//Barometer information Only
+  'ALL': '#009fe5',//Submitted in 2015k, is OKI, Barometer and OGP
+  'THREE': '#06e8c1',//Submited in 2015 is OKI and either OGP or Barometer
+  'GODI15+OKI': '#0DEC5C', //Submitted in 2015 and is part of OKI Network
+  'GODI15+Barometer':'#2ff014',//Submitted in 2015, has info from Barometer
+  'GODI15+OGP':'#9cf31b',//Submitted in 2015, belongs to OGP
+  'GODI15': '#f7e823',//Submitted to GODI 2015
+  'Barometer': '#fb892b',//Barometer information Only
+  'OGP': '#ff3236',//Belongs to OGP only
   defaultFill: '#bababa'
 },
 data:{
