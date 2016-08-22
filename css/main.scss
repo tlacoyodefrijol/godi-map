@@ -51,3 +51,73 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+#divider {
+  height:5px;
+}
+
+//using a table for map keys
+
+table {
+    position:sticky;
+    font-family: helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    max-width: 50%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+//'OGP': '#f5bb81',//Belongs to OGP only
+//'Barometer': '#f3eab5',//Barometer information Only
+//defaultFill: '#bababa'
+
+.title {
+  text-align:center;
+}
+//'GODI15' Submitted to GODI 2015
+.first {
+  width: 10%;
+  height: auto;
+  background-color: #a8e0f9;
+}
+//'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
+.second {
+  width: 10%;
+  height: auto;
+  background-color:#e2cc41;
+}
+//'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
+.third {
+  width: 10%;
+  height: auto;
+  background-color:#e29841;
+}
+//'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
+.fourth {
+  width: 10%;
+  height: auto;
+  background-color:#269a43;
+}
+
+//'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
+.fifth {
+  width: 10%;
+  height: auto;
+  background-color:#ffe438;
+}
+//'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
+.sixth {
+  width: 10%;
+  height: auto;
+  background-color:#82741d;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
