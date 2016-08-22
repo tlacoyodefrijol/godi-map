@@ -7,7 +7,6 @@ var basic_choropleth = new Datamap({
   responsive: true, // If true, call `resize()` on the map object when it should adjust it's size
   highlightOnHover: true,
   highlightFillColor: '#eeeee',
-  done: function() {}, // Callback when the map is done drawing
 
  geographyConfig: {
    highlightOnHover: true,
@@ -632,5 +631,13 @@ data:{
 "ZWE":{
   "fillKey":"Barometer",
   "Prepared":"Barometer information only"
-}
-});
+},
+
+done: function(datamap) {
+        datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
+
+        function redraw() {
+             datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+        }
+   }
+ });
