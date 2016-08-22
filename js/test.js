@@ -634,10 +634,17 @@ data:{
 },
 
 done: function(datamap) {
-        datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
-
-        function redraw() {
-             datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-        }
-   }
+    datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
+    function redraw() {
+        var prefix = '-webkit-transform' in document.body.style ?
+                        '-webkit-' : '-moz-transform' in document.body.style ?
+                                    '-moz-' : '-ms-transform' in document.body.style ?
+                                            '-ms-' : '';
+        var x = d3.event.translate[0];
+        var y = d3.event.translate[1];
+        datamap.svg.selectAll("g")
+            .style(prefix + 'transform',
+                'translate(' + x +'px, ' + y + 'px) scale(' + (d3.event.scale) + ')');
+    }
+}
  });
