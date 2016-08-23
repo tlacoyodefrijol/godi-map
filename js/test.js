@@ -7,14 +7,13 @@ var basic_choropleth = new Datamap({
   responsive: true, // If true, call `resize()` on the map object when it should adjust it's size
   highlightOnHover: true,
   highlightFillColor: '#eeeee',
-  done: function() {}, // Callback when the map is done drawing
 
  geographyConfig: {
    highlightOnHover: true,
    highlightFillColor: 'rgba(0,153,153,1)',
    highlightBorderColor: 'none',
-       highlightBorderWidth: 2,
-       highlightBorderOpacity: 1,
+       highlightBorderWidth: .5,
+       highlightBorderOpacity: .5,
        highlightFillOpacity: 0.85,
 
   popupTemplate: function(geography, data) {
@@ -25,14 +24,14 @@ var basic_choropleth = new Datamap({
   },
 
 fills: {
-  'GODI15': '#a8e0f9',//Submitted to GODI 2015
-  'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
-  'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
-  'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
-  'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
-  'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
-  'OGP': '#f5bb81',//Belongs to OGP only
-  'Barometer': '#f3eab5',//Barometer information Only
+  'ALL': '#009fe5',//Submitted in 2015k, is OKI, Barometer and OGP
+  'THREE': '#06e8c1',//Submited in 2015 is OKI and either OGP or Barometer
+  'GODI15+OKI': '#0DEC5C', //Submitted in 2015 and is part of OKI Network
+  'GODI15+Barometer':'#2ff014',//Submitted in 2015, has info from Barometer
+  'GODI15+OGP':'#9cf31b',//Submitted in 2015, belongs to OGP
+  'GODI15': '#f7e823',//Submitted to GODI 2015
+  'Barometer': '#fb892b',//Barometer information Only
+  'OGP': '#ff3236',//Belongs to OGP only
   defaultFill: '#bababa'
 },
 data:{
@@ -632,5 +631,20 @@ data:{
 "ZWE":{
   "fillKey":"Barometer",
   "Prepared":"Barometer information only"
+},
+
+done: function(datamap) {
+    datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
+    function redraw() {
+        var prefix = '-webkit-transform' in document.body.style ?
+                        '-webkit-' : '-moz-transform' in document.body.style ?
+                                    '-moz-' : '-ms-transform' in document.body.style ?
+                                            '-ms-' : '';
+        var x = d3.event.translate[0];
+        var y = d3.event.translate[1];
+        datamap.svg.selectAll("g")
+            .style(prefix + 'transform',
+                'translate(' + x +'px, ' + y + 'px) scale(' + (d3.event.scale) + ')');
+    }
 }
-});
+ });
