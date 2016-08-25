@@ -24,6 +24,7 @@ var basic_choropleth = new Datamap({
   },
 
 fills: {
+  'NOEXIST': "#bababa",
   'ALL': '#009fe5',//Submitted in 2015k, is OKI, Barometer and OGP
   'THREE': '#06e8c1',//Submited in 2015 is OKI and either OGP or Barometer
   'GODI15+OKI': '#0DEC5C', //Submitted in 2015 and is part of OKI Network
@@ -32,9 +33,317 @@ fills: {
   'GODI15': '#f7e823',//Submitted to GODI 2015
   'Barometer': '#fb892b',//Barometer information Only
   'OGP': '#ff3236',//Belongs to OGP only
-  defaultFill: '#bababa'
+  defaultFill: '#babab2'
 },
 data:{
+"SCG":{
+  "fillKey":"GODI15",
+  "Prepared":"Submitted to GODI 2015"
+  },
+"ZMB":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only"
+},
+"ZWE":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only"
+},
+"LAO":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
+},
+"TKM":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
+},
+"UZB":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
+},
+"ASM":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
+},
+"FJI":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"KIR":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MHL":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MTQ":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"PRK":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"PNG":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MYT":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"WSM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"FSM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"TON":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MCO":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"TUV":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"AND":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"BLR":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GRL":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"LIE":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SVN":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"BLZ":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"CUB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"DMA":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"NIC":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"DJI":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"PSE":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"AFG":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"BTN":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MDV":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"AGO":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"BDI":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SMR":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"STP":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"CPV":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"CAF":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"TCD":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"COM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"COG":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"COD":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"ERI":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GAB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SLB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GMB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GNB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"LSO":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MDG":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MRT":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SYC":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SOM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SSD":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SWZ":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"AIA":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GNQ":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"UMI":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GLP":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"GUM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"VUT":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"VAT":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"MAC":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"VGB":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"VIR":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"WLF":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"ESH":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SHN":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"SPM":{
+  "fillKey":"NOEXIST",
+"Prepared":"No information is available"
+},
+"KGZ":{
+  "fillKey":"GODI15",
+  "Prepared":"Submitted to GODI in 2015"
+},
+"SLE":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only (this country belongs to OGP as well)"
+},
+"UGA":{
+  "fillKey":"GODI15+Barometer",
+  "Prepared":"Submitted to GODI 2015 and has Barometer information"
+},
+"SOM":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
+},
+"NAM":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only"
+},
+"MWI":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only (this country belongs to OGP as well)"
+},
+"ROU":{
+  "fillKey":"GODI15+OKI",
+  "Prepared":"Submitted to GODI 2015 and is part of OKI Network"
+},
+"MOZ":{
+  "fillKey":"Barometer",
+  "Prepared":"Barometer information only (this country belongs to OGP as well)"
+},
 "TWN":{
   "fillKey":"GODI15+OKI",
 "Prepared":"Submitted to GODI 2015 and is part of OKI Network"
@@ -82,10 +391,6 @@ data:{
 "BRA":{
   "fillKey":"ALL",
 "Prepared":"Submitted in 2015, is OKI, Barometer and OGP"
-},
-"ROM":{
-  "fillKey":"GODI15+OKI",
-  "Prepared":"Submitted in 2015 and is part of OKI Network"
 },
 "MEX":{
   "fillKey":"ALL",
@@ -162,10 +467,6 @@ data:{
 "JPN":{
   "fillKey":"THREE",
   "Prepared":"Submited in 2015 is OKI and either OGP or Barometer"
-},
-"SCG":{
-  "fillKey":"GODI15",
-  "Prepared":"Submitted to GODI 2015"
 },
 "BEL":{
   "fillKey":"THREE",
@@ -599,38 +900,10 @@ data:{
   "fillKey":"OGP",
   "Prepared":"Belongs to OGP only"
 },
+"ERI":{
+  "fillKey":"NOEXIST",
+  "Prepared":"No information is available"
 },
-"MWI":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only (this country belongs to OGP as well)"
-},
-"MUS":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
-},
-"MOZ":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
-},
-"NAM":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
-},
-"SLE":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only (this country belongs to OGP as well)"
-},
-"UGA":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
-},
-"ZMB":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
-},
-"ZWE":{
-  "fillKey":"Barometer",
-  "Prepared":"Barometer information only"
 },
 
 done: function(datamap) {
